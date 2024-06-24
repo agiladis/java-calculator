@@ -5,19 +5,24 @@ import java.util.Scanner;
 public class ConsoleCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int choiceFeature;
+        int choiceMenu;
 
         while (true) {
             selectMenuUI();
-            System.out.println("Pilih: ");
-            int choiceFeature = sc.nextInt();
+            System.out.print("Pilih: ");
+            choiceFeature = sc.nextInt();
 
-            if (choiceFeature != 1 || choiceFeature != 2) {
+            if (choiceFeature == 0) {
                 sc.close();
                 return;
             }
 
             while (true) {
                 selectShapeUI();
+                System.out.print("Pilih: ");
+                choiceMenu = sc.nextInt();
+
             }
         }
 
