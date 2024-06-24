@@ -12,12 +12,16 @@ This program can calculate area and volume for following shape:
 
 ## Getting Started
 ### Prerequisites
-* Installed Python on your machine
+* Installed Java on your machine
 
 ### Installation
 1. Clone the repository to your local machine:
-```git clone https://github.com/yourusername/console-calculator.git```
+```
+git clone https://github.com/agiladis/java-calculator.git
+```
 2. Run the main script
-```python calculator.py```
+```
+Java main.java
+```
 3. Follow the on-screen prompts to select the shape and input the necessary dimensions.
 
