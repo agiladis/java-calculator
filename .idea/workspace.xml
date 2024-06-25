@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="823ce07a-d528-4e92-a9a8-0eaa69bda387" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ConsoleCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
+=======
+<<<<<<< HEAD
+    <list default="true" id="823ce07a-d528-4e92-a9a8-0eaa69bda387" name="Changes" comment="" />
+=======
+    <list default="true" id="823ce07a-d528-4e92-a9a8-0eaa69bda387" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> b2d8d9372285421745831209ece96feabfc11c72
+>>>>>>> afb786573aa1c2fe461f07cd6426da948877d6c4
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,9 +71,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+<<<<<<< HEAD
     &quot;git-widget-placeholder&quot;: &quot;feature/menu&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/programing/java/java-calculator&quot;,
+=======
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+>>>>>>> afb786573aa1c2fe461f07cd6426da948877d6c4
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -73,6 +87,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+<<<<<<< HEAD
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="java-calculator" />
@@ -88,6 +103,8 @@
       </method>
     </configuration>
   </component>
+=======
+>>>>>>> afb786573aa1c2fe461f07cd6426da948877d6c4
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
