@@ -36,6 +36,11 @@ public class ConsoleCalculator {
                         case 1:
                             calculateSquareArea(sc);
                             break;
+                        case 2:
+                            calculateCircleArea(sc);
+                            break;
+                        default:
+                            System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
                     }
                 }
 
@@ -66,7 +71,14 @@ public class ConsoleCalculator {
     private static void calculateSquareArea(Scanner sc) {
         System.out.print("Masukkan panjang sisi (cm) : ");
         double side = sc.nextDouble();
-        double area = side * side;
-        System.out.println("Luas persegi = " + area);
+        double squareArea = side * side;
+        System.out.println("Luas persegi = " + squareArea);
+    }
+
+    private static void calculateCircleArea(Scanner sc) {
+        System.out.println("Masukkan panjang jari-jari (cm) : ");
+        double r = sc.nextDouble();
+        double circleArea = Math.PI *  r * r;
+        System.out.println("Luas lingkaran = " + circleArea);
     }
 }
