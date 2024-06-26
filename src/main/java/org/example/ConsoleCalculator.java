@@ -40,6 +40,7 @@ public class ConsoleCalculator {
                             calculateCircleArea(sc);
                             break;
                         case 3:
+                            calculateTriangleArea(sc);
                             break;
                         case 4:
                             break;
@@ -80,9 +81,18 @@ public class ConsoleCalculator {
     }
 
     private static void calculateCircleArea(Scanner sc) {
-        System.out.println("Masukkan panjang jari-jari (cm) : ");
+        System.out.print("Masukkan panjang jari-jari (cm) : ");
         double r = sc.nextDouble();
         double circleArea = Math.PI *  r * r;
         System.out.println("Luas lingkaran = " + circleArea);
+    }
+
+    private static void calculateTriangleArea(Scanner sc) {
+        System.out.print("Masukkan panjang alas segitiga (cm) : ");
+        double base = sc.nextDouble();
+        System.out.print("Masukkan tinggi segitiga (cm) : ");
+        double height = sc.nextDouble();
+        double triangleArea = 0.5 * base * height;
+        System.out.println("Luas segitiga : " + triangleArea);
     }
 }
