@@ -9,24 +9,38 @@ public class ConsoleCalculator {
         int choiceMenu;
 
         while (true) {
+            boolean goToShapeMenu;
             selectMenuUI();
+
             System.out.print("Pilih: ");
             choiceFeature = sc.nextInt();
 
             if (choiceFeature == 0) {
+                System.out.println("THANK YOU!");
                 sc.close();
                 return;
+            } else {
+                goToShapeMenu = true;
             }
 
-            while (true) {
+            while (goToShapeMenu) {
                 selectShapeUI();
                 System.out.print("Pilih: ");
                 choiceMenu = sc.nextInt();
 
+                if (choiceFeature == 1) {
+                    switch (choiceMenu) {
+                        case 0:
+                            goToShapeMenu = false;
+                            break;
+                        case 1:
+                            calculateSquareArea(sc);
+                            break;
+                    }
+                }
+
             }
         }
-
-//        sc.close();
     }
 
     private static void selectMenuUI() {
@@ -47,5 +61,12 @@ public class ConsoleCalculator {
         System.out.println("3. Segitiga");
         System.out.println("4. Persegi Panjang");
         System.out.println("0. Kembali ke menu sebelumnya");
+    }
+
+    private static void calculateSquareArea(Scanner sc) {
+        System.out.print("Masukkan panjang sisi (cm) : ");
+        double side = sc.nextDouble();
+        double area = side * side;
+        System.out.println("Luas persegi = " + area);
     }
 }
