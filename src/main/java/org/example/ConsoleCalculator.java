@@ -39,6 +39,10 @@ public class ConsoleCalculator {
                         case 2:
                             calculateCircleArea(sc);
                             break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
                         default:
                             System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
                     }
