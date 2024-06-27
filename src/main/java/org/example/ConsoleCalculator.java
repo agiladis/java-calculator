@@ -62,6 +62,7 @@ public class ConsoleCalculator {
                         case 1:
                             break;
                         case 2:
+                            calculateBlockVolume(sc);
                             break;
                         case 3:
                             break;
@@ -128,5 +129,16 @@ public class ConsoleCalculator {
         double height = sc.nextDouble();
         double triangleArea = 0.5 * base * height;
         System.out.println("Luas segitiga : " + triangleArea);
+    }
+
+    private static void calculateBlockVolume(Scanner sc) {
+        System.out.print("Masukkan panjang balok (cm) : ");
+        double length = sc.nextDouble();
+        System.out.print("Masukkan lebar balok (cm) : ");
+        double width = sc.nextDouble();
+        System.out.print("Masukkan tinggi balok (cm) : ");
+        double height = sc.nextDouble();
+        double blockVolume = length * width * height;
+        System.out.println("Volum balok : " + blockVolume);
     }
 }
