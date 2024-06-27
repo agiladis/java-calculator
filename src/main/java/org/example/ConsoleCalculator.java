@@ -19,8 +19,11 @@ public class ConsoleCalculator {
                 System.out.println("THANK YOU!");
                 sc.close();
                 return;
-            } else {
+            } else if (choiceFeature == 1 || choiceFeature == 2){
                 goToShapeMenu = true;
+            } else {
+                goToShapeMenu = false;
+                System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
             }
 
             while (goToShapeMenu) {
@@ -47,6 +50,25 @@ public class ConsoleCalculator {
                         default:
                             System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
                     }
+                } else if (choiceFeature == 2) {
+                    switch (choiceMenu) {
+                        case 0:
+                            goToShapeMenu = false;
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        default:
+                            System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
+                    }
+                } else {
+                    goToShapeMenu = false;
+                    System.out.println("pilih 2 ini mah");
                 }
 
             }
