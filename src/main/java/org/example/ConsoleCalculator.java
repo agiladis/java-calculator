@@ -27,11 +27,11 @@ public class ConsoleCalculator {
             }
 
             while (goToShapeMenu) {
-                selectShapeUI();
-                System.out.print("Pilih: ");
-                choiceMenu = sc.nextInt();
-
                 if (choiceFeature == 1) {
+                    selectShapeUI();
+                    System.out.print("Pilih: ");
+                    choiceMenu = sc.nextInt();
+
                     switch (choiceMenu) {
                         case 0:
                             goToShapeMenu = false;
@@ -51,6 +51,10 @@ public class ConsoleCalculator {
                             System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
                     }
                 } else if (choiceFeature == 2) {
+                    selectSolidUI();
+                    System.out.print("Pilih: ");
+                    choiceMenu = sc.nextInt();
+
                     switch (choiceMenu) {
                         case 0:
                             goToShapeMenu = false;
@@ -60,8 +64,6 @@ public class ConsoleCalculator {
                         case 2:
                             break;
                         case 3:
-                            break;
-                        case 4:
                             break;
                         default:
                             System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
@@ -92,6 +94,16 @@ public class ConsoleCalculator {
         System.out.println("2. Lingkaran");
         System.out.println("3. Segitiga");
         System.out.println("4. Persegi Panjang");
+        System.out.println("0. Kembali ke menu sebelumnya");
+    }
+
+    private static void selectSolidUI() {
+        System.out.println("-----------------------------------------");
+        System.out.println("Pilih bangun ruang yang akan dihitung");
+        System.out.println("-----------------------------------------");
+        System.out.println("1. Kubus");
+        System.out.println("2. Balok");
+        System.out.println("3. Tabung");
         System.out.println("0. Kembali ke menu sebelumnya");
     }
 
