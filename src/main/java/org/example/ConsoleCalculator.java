@@ -43,6 +43,7 @@ public class ConsoleCalculator {
                             calculateTriangleArea(sc);
                             break;
                         case 4:
+                            calculateRectangleArea(sc);
                             break;
                         default:
                             System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
@@ -93,6 +94,15 @@ public class ConsoleCalculator {
         System.out.print("Masukkan tinggi segitiga (cm) : ");
         double height = sc.nextDouble();
         double triangleArea = 0.5 * base * height;
-        System.out.println("Luas segitiga : " + triangleArea);
+        System.out.println("Luas segitiga = " + triangleArea);
+    }
+
+    private static void calculateRectangleArea(Scanner sc) {
+        System.out.print("Masukkan panjang persegi panjang (cm) : ");
+        double length = sc.nextDouble();
+        System.out.print("Masukkan lebar persegi panjang (cm) : ");
+        double width = sc.nextDouble();
+        double rectangleArea = length * width;
+        System.out.println("Luas persegi panjang = " + rectangleArea);
     }
 }
