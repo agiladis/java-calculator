@@ -60,8 +60,10 @@ public class ConsoleCalculator {
                             goToShapeMenu = false;
                             break;
                         case 1:
+                            calculateCubeVolume(sc);
                             break;
                         case 2:
+                            calculateBlockVolume(sc);
                             break;
                         case 3:
                             calculateTubeVolume(sc);
@@ -138,5 +140,23 @@ public class ConsoleCalculator {
         double height = sc.nextDouble();
         double tubeVolume = Math.PI *  r * height;
         System.out.println("Volume tabung = " + tubeVolume);
+    }
+  
+    private static void calculateBlockVolume(Scanner sc) {
+        System.out.print("Masukkan panjang balok (cm) : ");
+        double length = sc.nextDouble();
+        System.out.print("Masukkan lebar balok (cm) : ");
+        double width = sc.nextDouble();
+        System.out.print("Masukkan tinggi balok (cm) : ");
+        double height = sc.nextDouble();
+        double blockVolume = length * width * height;
+        System.out.println("Volum balok : " + blockVolume);
+    }
+  
+    private static void calculateCubeVolume(Scanner sc) {
+        System.out.print("Masukkan panjang sisi (cm) : ");
+        double side = sc.nextDouble();
+        double cubeVolume = side * side * side;
+        System.out.println("Volume kubus = " + cubeVolume);
     }
 }
