@@ -19,8 +19,11 @@ public class ConsoleCalculator {
                 System.out.println("THANK YOU!");
                 sc.close();
                 return;
-            } else {
+            } else if (choiceFeature == 1 || choiceFeature == 2){
                 goToShapeMenu = true;
+            } else {
+                goToShapeMenu = false;
+                System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
             }
 
             while (goToShapeMenu) {
@@ -36,7 +39,36 @@ public class ConsoleCalculator {
                         case 1:
                             calculateSquareArea(sc);
                             break;
+                        case 2:
+                            calculateCircleArea(sc);
+                            break;
+                        case 3:
+                            calculateTriangleArea(sc);
+                            break;
+                        case 4:
+                            break;
+                        default:
+                            System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
                     }
+                } else if (choiceFeature == 2) {
+                    switch (choiceMenu) {
+                        case 0:
+                            goToShapeMenu = false;
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        default:
+                            System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
+                    }
+                } else {
+                    goToShapeMenu = false;
+                    System.out.println("pilih 2 ini mah");
                 }
 
             }
@@ -66,7 +98,23 @@ public class ConsoleCalculator {
     private static void calculateSquareArea(Scanner sc) {
         System.out.print("Masukkan panjang sisi (cm) : ");
         double side = sc.nextDouble();
-        double area = side * side;
-        System.out.println("Luas persegi = " + area);
+        double squareArea = side * side;
+        System.out.println("Luas persegi = " + squareArea);
+    }
+
+    private static void calculateCircleArea(Scanner sc) {
+        System.out.print("Masukkan panjang jari-jari (cm) : ");
+        double r = sc.nextDouble();
+        double circleArea = Math.PI *  r * r;
+        System.out.println("Luas lingkaran = " + circleArea);
+    }
+
+    private static void calculateTriangleArea(Scanner sc) {
+        System.out.print("Masukkan panjang alas segitiga (cm) : ");
+        double base = sc.nextDouble();
+        System.out.print("Masukkan tinggi segitiga (cm) : ");
+        double height = sc.nextDouble();
+        double triangleArea = 0.5 * base * height;
+        System.out.println("Luas segitiga : " + triangleArea);
     }
 }
