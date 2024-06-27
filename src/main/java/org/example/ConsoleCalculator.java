@@ -66,6 +66,7 @@ public class ConsoleCalculator {
                             calculateBlockVolume(sc);
                             break;
                         case 3:
+                            calculateTubeVolume(sc);
                             break;
                         default:
                             System.out.println("Pilihan tidak valid. Silahkan coba lagi!");
@@ -132,6 +133,15 @@ public class ConsoleCalculator {
         System.out.println("Luas segitiga : " + triangleArea);
     }
 
+    private static void calculateTubeVolume(Scanner sc) {
+        System.out.print("Masukkan jari-jari tabung (cm) : ");
+        double r = sc.nextDouble();
+        System.out.print("Masukkan tinggi tabung (cm) : ");
+        double height = sc.nextDouble();
+        double tubeVolume = Math.PI *  r * height;
+        System.out.println("Volume tabung = " + tubeVolume);
+    }
+  
     private static void calculateBlockVolume(Scanner sc) {
         System.out.print("Masukkan panjang balok (cm) : ");
         double length = sc.nextDouble();
