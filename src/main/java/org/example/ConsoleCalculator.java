@@ -60,6 +60,7 @@ public class ConsoleCalculator {
                             goToShapeMenu = false;
                             break;
                         case 1:
+                            calculateCubeVolume(sc);
                             break;
                         case 2:
                             break;
@@ -128,5 +129,12 @@ public class ConsoleCalculator {
         double height = sc.nextDouble();
         double triangleArea = 0.5 * base * height;
         System.out.println("Luas segitiga : " + triangleArea);
+    }
+
+    private static void calculateCubeVolume(Scanner sc) {
+        System.out.print("Masukkan panjang sisi (cm) : ");
+        double side = sc.nextDouble();
+        double cubeVolume = side * side * side;
+        System.out.println("Volume kubus = " + cubeVolume);
     }
 }
