@@ -60,6 +60,7 @@ public class ConsoleCalculator {
                             goToShapeMenu = false;
                             break;
                         case 1:
+                            calculateCubeVolume(sc);
                             break;
                         case 2:
                             calculateBlockVolume(sc);
@@ -140,5 +141,12 @@ public class ConsoleCalculator {
         double height = sc.nextDouble();
         double blockVolume = length * width * height;
         System.out.println("Volum balok : " + blockVolume);
+    }
+  
+    private static void calculateCubeVolume(Scanner sc) {
+        System.out.print("Masukkan panjang sisi (cm) : ");
+        double side = sc.nextDouble();
+        double cubeVolume = side * side * side;
+        System.out.println("Volume kubus = " + cubeVolume);
     }
 }
